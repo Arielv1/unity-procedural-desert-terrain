@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: PropertiesSO
   m_EditorClassIdentifier: 
   autoRefresh: 1
-  xSize: 19
-  zSize: 31
-  xResolution: 255
-  zResolution: 248
-  xAmp: 0.556
-  zAmp: 0.556
-  frequency: 1.09
+  xSize: 1
+  zSize: 1
+  xResolution: 1
+  zResolution: 1
+  xAmp: -1
+  zAmp: -1
+  frequency: 0

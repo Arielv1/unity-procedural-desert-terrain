@@ -27,6 +27,7 @@ public class ProceduralTerrain : MonoBehaviour
 
     public void BuildMesh()
     {
+        if (terrainProperties == null) return;
         SetUpComponents();
         SetVertices();
         SetTriangles();
@@ -35,9 +36,10 @@ public class ProceduralTerrain : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        if (_vertices == null || _vertices.Length == 0 || gizmoSettings == null) return;
         if (Application.isPlaying && !gizmoSettings.showInGame) return;
         if (!Application.isPlaying && !gizmoSettings.showInInspector) return;
-        if (_vertices.Length == 0) return;
+        
 
         Gizmos.color = gizmoSettings.color;
         for (int i = 0; i < _vertices.Length; i++)
